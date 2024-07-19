@@ -64,7 +64,7 @@
 			}
 			*/
 
-			for (int i = 7; i <= 1000; i++)
+			/*for (int i = 7; i <= 1000; i++)
 			{
 				if (i % 10 == 7)
 				{
@@ -75,7 +75,52 @@
 			for (int i = 7; i <= 1000; i += 10)
 			{
 				Console.WriteLine(i);
+			}*/
+
+			// int end  = int.Parse(Console.ReadLine());
+
+			/*int number = 1;
+			while (number <= end) // If 'end' is less than 1, nothing is displayed 
+			{
+                Console.WriteLine(number);
+				number++;
+            }*/
+
+			/*int number = 1;
+			do // If 'end' is less than 1, the body will be still executed once because of the way do-while works.
+			{
+                Console.WriteLine(number);
+				number++;
+            }
+			while (number > end);*/
+
+			/*int number = int.Parse(Console.ReadLine());
+
+			for (int i = 1; i <= 100; i++)
+			{
+                Console.WriteLine($"This is the start of iteration #{i}");
+				if (i == number)
+				{
+					// break; // Nothing else from the current loop will be executed; proceed with next instructions
+
+					continue; // Nothing else from the current iteration will be executed; proceed with next iteration
+				}
+                Console.WriteLine($"This is the end of iteration #{i}");
+            }
+
+            Console.WriteLine("This is the end of our program!");*/
+
+			for (int i = 0; i <= 9; i++)
+			{
+                Console.WriteLine($"Start of iteration #{i}");
+
+                for (int j = 0; j < 9; j++)
+				{
+                    Console.WriteLine($"i = {i}, j = {j}");
+                }
+
+                Console.WriteLine($"End of iteration #{i}");
 			}
-		}
+        }
 	}
 }
