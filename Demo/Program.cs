@@ -110,7 +110,7 @@
 
             Console.WriteLine("This is the end of our program!");*/
 
-			for (int i = 0; i <= 9; i++)
+			/*for (int i = 0; i <= 9; i++)
 			{
                 Console.WriteLine($"Start of iteration #{i}");
 
@@ -120,7 +120,60 @@
                 }
 
                 Console.WriteLine($"End of iteration #{i}");
+			}*/
+
+			// PrintDayInfo();
+
+			/*double temperatureInFahrenheit = double.Parse(Console.ReadLine());
+			double temperatureInCelsius = FahrenheitToCelsius(temperatureInFahrenheit);
+            Console.WriteLine(temperatureInCelsius);*/
+
+			/*double side = double.Parse(Console.ReadLine());
+			double height = double.Parse(Console.ReadLine());
+
+			double area = CalculateTriangleArea(side, height);
+            Console.WriteLine(area);*/
+
+			/*double number = double.Parse(Console.ReadLine());
+			int power = int.Parse(Console.ReadLine());
+
+			double result = RaiseToPower(number, power);
+            Console.WriteLine(result);*/
+
+			Console.WriteLine("First line!");
+			PrintMiddleLines();
+			Console.WriteLine("Fourth line!");
+        }
+
+		static void PrintDayInfo()
+		{
+            Console.WriteLine("It's snowing. It's cold outside.");
+        }
+
+		static double FahrenheitToCelsius(double degrees)
+		{
+			return (degrees - 32) * 5 / 9;
+		}
+
+		static double CalculateTriangleArea(double side, double height)
+		{
+			return side * height / 2;
+		}
+
+		static double RaiseToPower(double n, int p)
+		{
+			double result = 1;
+			for (int i = 0; i < p; i++)
+			{
+				result *= n;
 			}
+			return result;
+		}
+
+		static void PrintMiddleLines()
+		{
+            Console.WriteLine("Second line!");
+            Console.WriteLine("Third line!");
         }
 	}
 }
